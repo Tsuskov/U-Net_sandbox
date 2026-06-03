@@ -1,0 +1,45 @@
+# Data directories
+data/
+datasets/
+data_raw/
+
+# Checkpoints and models
+checkpoints/
+*.pt
+*.pth
+*.model
+weights/
+
+# Results
+results/
+predictions/
+output/
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+*.log
+logs/
