@@ -15,13 +15,13 @@ This repository provides:
 
 ## Key Features
 
-✓ **31M parameters** - Matches the architecture in the paper
-✓ **Unpadded convolutions** - Preserves valid region only (572×572 → 388×388)
-✓ **Skip connections** - Combines multi-scale features
-✓ **Weighted loss** - Emphasizes cell boundaries
-✓ **Elastic deformation** - Key augmentation for small datasets
-✓ **Overlap-tile strategy** - Seamless segmentation of large images
-✓ **High momentum SGD** - Training with momentum=0.99
+ **31M parameters** - Matches the architecture in the paper
+ **Unpadded convolutions** - Preserves valid region only (572×572 → 388×388)
+ **Skip connections** - Combines multi-scale features
+ **Weighted loss** - Emphasizes cell boundaries
+ **Elastic deformation** - Key augmentation for small datasets
+ **Overlap-tile strategy** - Seamless segmentation of large images
+ **High momentum SGD** - Training with momentum=0.99
 
 ## Installation
 
@@ -29,7 +29,7 @@ This repository provides:
 pip install -r requirements.txt
 ```
 
-## Quick Start
+
 
 ### 1. Verify Installation
 
@@ -102,7 +102,7 @@ python3 experiments/cell_tracking.py --dataset dic_hela --epochs 100
 Neuronal structure segmentation in electron microscopy
 
 Expected: Warping error 0.000353, Rand error 0.0382
-Dataset: 30 training images (512×512)
+Dataset: 30 (!) training images (512×512)
 
 ### PhC-U373 Cell Tracking
 Glioblastoma-astrocytoma cells (phase contrast)
