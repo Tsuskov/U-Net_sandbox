@@ -88,7 +88,8 @@ class UNetTrainer:
                 for i in range(batch_size):
                     mask_np = masks_cropped[i].cpu().numpy().astype(bool)
                     w_map = compute_weight_map(mask_np)
-                    weight_map_list.append(torch.from_numpy(w_map))
+                    w_map = torch.from_numpy(w_map).float()  # Convert to float32
+                    weight_map_list.append(w_map)
                 weight_map = torch.stack(weight_map_list).to(self.device)
             
             loss = self.criterion(outputs, masks_cropped, weight_map)
